@@ -7,6 +7,12 @@
 // Language    java
 // Status      Accepted
 // Submitted   2026-08-19, 05:18 p.m.
+// Technique   for-loop-multiplication
+// Time        O(1)
+// Space       O(1)
+// Insight     The implementation iterates through the fixed range of integers from one to ten to compute and print the product of the input integer and the current loop index.
+// Interview   Before: "I would use a while loop to print the multiples." After: "Using a for loop is more idiomatic for a fixed range of ten iterations, resulting in O(1) time and space complexity regardless of the input integer N."
+// Pitfalls    (1) Incorrectly setting the loop termination condition to i < 10 instead of i <= 10, which would omit the tenth multiple.  (2) Failing to format the output string exactly as N x i = result, which causes a presentation error.
 // ──────────────────────────────────────────────────
 
 import java.io.*;
